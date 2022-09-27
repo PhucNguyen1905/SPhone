@@ -1,0 +1,23 @@
+body {
+    background-color: #d2d6de;
+}
+
+h4 {
+    text-align: center;
+}
+
+#form_register {
+    border: 2px solid white;
+    padding: 30px;
+    width: 360px;
+    margin: 1% auto;
+    background-color: white;
+}
+
+#link_login {
+    margin-right: 20%;
+}
+
+label.error{
+    color: red;
+}
