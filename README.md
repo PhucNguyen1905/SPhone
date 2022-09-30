@@ -8,7 +8,16 @@ Database: MySQL
 
 
 # Tips for running
+Đổi tên PhoneTMDT -> BKPhone
+
 Create schema named **bkphone** and run sql script **bkphone.sql**
+
+Thay đổi thư mục Web Root (Đường dẫn mặc định trong XAMPP:
+C:\xampp\htdocs)
+1. Tìm và mở file: httpd.conf trong thư mục cài đặt XAMPP (Mặc định:
+C:\xampp\apache\conf)
+2. Tìm dòng C:/xampp/htdocs, và sửa thành đường dẫn đến thư mục Web Root mới
+3. Restart Apache
 
 # Notes
 
