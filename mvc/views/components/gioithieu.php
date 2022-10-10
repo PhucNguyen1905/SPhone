@@ -38,7 +38,7 @@
                 <div class="col-md-6 col-xl-3">
                     <div class="card-founder">
                         <img src="https://gptgroup.net/img/personnel/img/1650856925245_644234514_leader-img.jpg" alt="founder">
-                        <p>Lê Mạnh Hùng</p>
+                        <p>Lê Xuân Nghĩa</p>
                         <p>CMO</p>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                 <div class="col-md-6 col-xl-3">
                     <div class="card-founder">
                         <img src="https://gptgroup.net/img/personnel/img/1650856925245_644234514_leader-img.jpg" alt="founder">
-                        <p>Nguyễn Văn Xuân Vũ</p>
+                        <p>Nguyễn Duy Mạnh</p>
                         <p>CIO</p>
                     </div>
                 </div>

@@ -9,11 +9,15 @@
                 <!-- Links -->
                 <h5>Giới thiệu về chúng tôi</h5>
                 <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
-                <p class="foot-desc mb-0">Đội ngũ phát triển gồm 5 thành viên</p>
+                <p class="foot-desc mb-0">Đội ngũ phát triển gồm 8 thành viên</p>
                 <p class="foot-desc mb-0">Nguyễn Trọng Phúc </p>
-                <p class="foot-desc mb-0">Nguyễn Văn Xuân Vũ </p>
-                <p class="foot-desc mb-0">Lê Mạnh Hùng </p>
                 <p class="foot-desc mb-0">Nguyễn Ngọc Nguyên </p>
+                <p class="foot-desc mb-0">Lê Xuân Nghĩa </p>
+                <p class="foot-desc mb-0">Bùi Xuân Thông </p>
+                <p class="foot-desc mb-0">Nguyễn Hồng Thiện </p>
+                <p class="foot-desc mb-0">Phan Thành Tín </p>
+                <p class="foot-desc mb-0">Nguyễn Duy Mạnh </p>
+                <p class="foot-desc mb-0">Nguyễn Minh Phú </p>
             </div>
             <!-- Grid column -->
             <hr class="clearfix w-100 d-md-none">
