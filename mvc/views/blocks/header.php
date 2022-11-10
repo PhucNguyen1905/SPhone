@@ -59,8 +59,8 @@ foreach ($cart as $item) {
     <!-- Begin Header -->
     <nav id="navColor" class=" navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand my-2 my-md-1" href="http://localhost/BKPhone/Home">
-            <img src="https://fenr.hcmut.edu.vn/uploads/img-website/logo-1638852988.jpg" alt="logo-school">
-            <span class="h2 mb-0 fw-bold text-warning">BKPhone</span>
+            <img src="http://localhost/BKPhone/public/images/sphone.png" alt="logo-school">
+            <span class="h2 mb-0 fw-bold text-warning">SPhone</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
