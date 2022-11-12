@@ -47,7 +47,7 @@ if ($user != null) {
     <!-- ===========SIDE BAR============ -->
     <div class="bg-white" id="sidebar-wrapper">
       <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
-        <img src="<?php echo SCRIPT_ROOT . '/public/images/logo.png'; ?>" alt=""> <a href="http://localhost/SPhone/Home" style="text-decoration: none;">SPhone</a>
+        <img src="https://raw.githubusercontent.com/PhucNguyen1905/SPhone/main/public/images/sphone.png" alt=""> <a href="http://localhost/SPhone/Home" style="text-decoration: none;">SPhone</a>
       </div>
       <div class="list-group list-group-flush my-3">
         <a href="http://localhost/SPhone/OrderAdmin" class="<?php echo $activeNav == 'order' ? 'active ' : ' '; ?>list-group-item list-group-item-action bg-transparent second-text">
