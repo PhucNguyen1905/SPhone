@@ -59,7 +59,7 @@
     <?php
 
     ?>
-    <a href="http://localhost/BKPhone/Home">Quay về trang chủ</a>
+    <a href="http://localhost/SPhone/Home">Quay về trang chủ</a>
   </div>
 </body>
 

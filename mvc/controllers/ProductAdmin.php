@@ -38,7 +38,7 @@ class ProductAdmin extends Controller
             $description = getPost('description');
             $this->productModel->insertProduct($category_id, $title, $price, $discount, $thumbnail, $description);
         }
-        header('Location: http://localhost/BKPhone/productAdmin');
+        header('Location: http://localhost/SPhone/productAdmin');
     }
 
     public function ViewEdit($id)
@@ -69,12 +69,12 @@ class ProductAdmin extends Controller
             $description = getPost('description');
             $this->productModel->updateProduct($id, $category_id, $title, $price, $discount, $thumbnail, $description);
         }
-        header('Location: http://localhost/BKPhone/productAdmin');
+        header('Location: http://localhost/SPhone/productAdmin');
     }
 
     public function Delete($id)
     {
         $this->productModel->selectProductDelete($id);
-        header('Location: http://localhost/BKPhone/productAdmin');
+        header('Location: http://localhost/SPhone/productAdmin');
     }
 }

@@ -32,7 +32,7 @@ class OrderAdmin extends Controller
     public function updateStatusOrder($id, $status)
     {
         $this->orderModel->updateStatus($id, $status);
-        header('Location: http://localhost/BKPhone/OrderAdmin');
+        header('Location: http://localhost/SPhone/OrderAdmin');
     }
 
     public function addOrderSuccess()
@@ -46,7 +46,7 @@ class OrderAdmin extends Controller
             $user_id = getPost('user_id');
             $totalMoney = getPost('totalMoney');
             if ($fullname == "" || $address == "" || $phone == "" || $email == "")
-                header('Location: http://localhost/BKPhone/Home/checkout/' . $totalMoney);
+                header('Location: http://localhost/SPhone/Home/checkout/' . $totalMoney);
             else {
                 $this->orderModel->insertOrders($user_id, $fullname, $address, $phone, $email, $totalMoney);
                 $productModel = $this->model("ProductModel");
@@ -74,7 +74,7 @@ class OrderAdmin extends Controller
                     $this->orderModel->insertOrderDetail($orderId[0]["id"], $orderDetails[$i]["id"], $orderDetails[$i]["price"], $num[$i], $num[$i] * $orderDetails[$i]["price"]);
                 }
                 setcookie('cart', "", -60, '/');
-                header('Location: http://localhost/BKPhone/Home/succesOrder');
+                header('Location: http://localhost/SPhone/Home/succesOrder');
             }
         }
     }

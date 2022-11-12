@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th6 19, 2022 lúc 02:58 AM
+-- Thời gian đã tạo: Th10 12, 2022 lúc 09:41 AM
 -- Phiên bản máy phục vụ: 10.4.21-MariaDB
 -- Phiên bản PHP: 8.0.11
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `bkphone`
+-- Cơ sở dữ liệu: `sphone`
 --
 
 -- --------------------------------------------------------
@@ -42,7 +42,7 @@ INSERT INTO `category` (`id`, `name`) VALUES
 (3, 'Xiaomi'),
 (10, 'Nokia'),
 (11, 'Huawei'),
-(12, 'Sony');
+(112, 'Limited');
 
 -- --------------------------------------------------------
 
@@ -95,21 +95,8 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `fullname`, `email`, `phone`, `user_id`, `status`, `deleted`, `address`, `created_at`, `total_money`) VALUES
-(43, 'Phuc Nguyen', 'phuc.user@gmail.com', '0388542487', 53, 1, 0, 'Vĩnh Long', '2022-05-18 10:28:02', 76980000),
-(44, 'Phuc Nguyen', 'ninjavip1st@gmail.com', '0388542487', 53, 1, 0, 'Vĩnh Long', '2022-02-18 11:05:16', 29990000),
-(45, 'Trọng Phúc', 'user1@gmail.com', '0123456789', 50, 2, 0, 'KTX Khu A ĐHQG', '2022-01-18 11:06:51', 55980000),
-(46, 'Phuc Nguyen', 'customer1@gmail.com', '0388542487', 50, 1, 0, 'Vĩnh Long', '2022-04-18 11:07:42', 18500000),
-(47, 'Phuc Nguyen', 'cus@gmail.com', '0906995989', 50, 2, 0, 'Vĩnh Long', '2022-03-18 11:08:16', 39170000),
-(48, 'Phuc Nguyen', 'ninja@gmail.com', '0388542487', 50, 1, 0, 'Vĩnh Long', '2022-07-18 11:08:42', 33990000),
-(49, 'Phuc Nguyen', 'ninjavip1st@gmail.com', '+84388542487', 51, 2, 0, 'Vĩnh Long', '2022-08-18 11:09:58', 12990000),
-(50, 'Phuc Nguyen', 'ninjavip1st@gmail.com', '0906995989', 51, 1, 0, 'Vĩnh Long', '2022-09-18 11:10:18', 50980000),
-(51, 'Trọng Phúc', 'user3@gmail.com', '0906995989', 54, 3, 0, 'Vĩnh Long', '2022-10-18 11:10:57', 61980000),
-(52, 'Phuc Nguyen', 'customer1@gmail.com', '0906995989', 54, 3, 0, 'Vĩnh Long', '2022-11-18 11:12:03', 34990000),
-(53, 'Nguyễn Trọng Phúc', 'ngtrongphuc1905@gmail.com', '0906995989', 54, 1, 0, '268 Lý Thường Kiệt, Quận 10 Tpp. HCM', '2022-12-18 11:12:43', 102970000),
-(54, 'Nguyen Trong Phuc', 'phuc.nguyen1905@hcmut.edu.vn', '0388542487', 54, 0, 0, 'Vĩnh Long', '2022-06-18 11:16:32', 34990000),
-(55, 'Phuc Nguyen', 'ngtrongphuc1905@gmail.com', '0388542487', 54, 0, 0, '268 Ly Thuong Kiet', '2022-06-18 16:31:56', 33990000),
-(56, 'Phuc Nguyen', 'phuc.nguyen1905@hcmut.edu.vn', '0906995989', 54, 4, 0, 'KTX Khu A ĐHQG', '2022-06-18 16:40:44', 34990000),
-(57, 'Demo', 'ninjavip1st@gmail.com', '0388542487', 55, 3, 0, 'Vĩnh Long', '2022-06-19 02:50:41', 68980000);
+(58, 'Phuc Nguyen', 'customer1@gmail.com', '+84388542487', 56, 3, 0, 'Vĩnh Long', '2022-11-12 15:15:38', 25989999),
+(59, 'Phuc Nguyen', 'ninjavip1st@gmail.com', '+84388542487', 56, 3, 0, 'Vĩnh Long', '2022-11-12 15:18:05', 25990000);
 
 -- --------------------------------------------------------
 
@@ -131,29 +118,8 @@ CREATE TABLE `order_details` (
 --
 
 INSERT INTO `order_details` (`id`, `order_id`, `product_id`, `price`, `num`, `total_money`) VALUES
-(78, 43, 1, 34990000, 1, 34990000),
-(79, 43, 4, 41990000, 1, 41990000),
-(80, 44, 75, 29990000, 1, 29990000),
-(81, 45, 72, 27990000, 2, 55980000),
-(82, 46, 59, 18500000, 1, 18500000),
-(83, 47, 2, 24990000, 1, 24990000),
-(84, 47, 9, 4190000, 1, 4190000),
-(85, 47, 53, 9990000, 1, 9990000),
-(86, 48, 65, 33990000, 1, 33990000),
-(87, 49, 50, 12990000, 1, 12990000),
-(88, 50, 7, 17990000, 1, 17990000),
-(89, 50, 67, 32990000, 1, 32990000),
-(90, 51, 65, 33990000, 1, 33990000),
-(91, 51, 66, 27990000, 1, 27990000),
-(92, 52, 1, 34990000, 1, 34990000),
-(93, 53, 4, 41990000, 1, 41990000),
-(94, 53, 67, 32990000, 1, 32990000),
-(95, 53, 72, 27990000, 1, 27990000),
-(96, 54, 1, 34990000, 1, 34990000),
-(97, 55, 65, 33990000, 1, 33990000),
-(98, 56, 1, 34990000, 1, 34990000),
-(99, 57, 1, 34990000, 1, 34990000),
-(100, 57, 65, 33990000, 1, 33990000);
+(101, 58, 61, 25990000, 1, 25990000),
+(102, 59, 61, 25990000, 1, 25990000);
 
 -- --------------------------------------------------------
 
@@ -178,7 +144,7 @@ CREATE TABLE `payments` (
 --
 
 INSERT INTO `payments` (`id`, `order_id`, `user_id`, `money`, `note`, `vnp_response_code`, `code_vnpay`, `code_bank`, `time`) VALUES
-(10, 2147483647, 54, 34990000, 'Tra iphone', '00', '13775938', 'JCB', '2022-06-18 16:00:00');
+(11, 2147483647, 56, 25990000, 'Noi dung thanh toan', '00', '13876413', 'NCB', '2022-11-12 15:00:00');
 
 -- --------------------------------------------------------
 
@@ -204,14 +170,14 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `category_id`, `title`, `price`, `discount`, `thumbnail`, `description`, `created_at`, `updated_at`, `deleted`) VALUES
-(1, 2, 'iPhone 13 Pro Max 128GB', 34990000, 29690000, 'https://clickbuy.com.vn/uploads/2021/11/13-1.jpg', 'iPhone 13 Pro Max – siêu phẩm được mong chờ nhất ở nửa cuối năm 2021 đến từ Apple. Máy có thiết kế không mấy đột phá khi so với người tiền nhiệm, bên trong đây vẫn là một sản phẩm có màn hình siêu đẹp, tần số quét được nâng cấp lên 120 Hz mượt mà, cảm biến camera có kích thước lớn hơn, cùng hiệu năng mạnh mẽ với sức mạnh đến từ Apple A15 Bionic, sẵn sàng cùng bạn chinh phục mọi thử thách.', '2022-06-17 01:51:53', '2022-06-17 01:51:53', 0),
-(2, 2, 'iPhone 13 mini 256GB', 24990000, 21990000, 'https://clickbuy.com.vn/uploads/2021/10/13.jpg', 'iPhone 13 Mini – siêu phẩm được mong chờ nhất ở nửa cuối năm 2021 đến từ Apple. Máy có thiết kế không mấy đột phá khi so với người tiền nhiệm, bên trong đây vẫn là một sản phẩm có màn hình siêu đẹp, tần số quét được nâng cấp lên 120 Hz mượt mà, cảm biến camera có kích thước lớn hơn, cùng hiệu năng mạnh mẽ với sức mạnh đến từ Apple A15 Bionic, sẵn sàng cùng bạn chinh phục mọi thử thách.', '2022-06-17 01:51:53', '2022-06-17 01:51:53', 0),
-(3, 1, 'Samsung Galaxy S22 Ultra 5G', 20990000, 28990000, 'https://clickbuy.com.vn/uploads/2022/03/s22-ultra.jpg', 'Galaxy S22 Ultra 5G với bút S-Pen tích hợp. Samsung Galaxy S22 Ultra 5G (8GB|128GB) Chính hãng mang đến trải nghiệm di động tối ưu và cao cấp. Bằng cách kết hợp các tính năng tốt nhất của dòng Note và S', '2022-06-17 01:51:53', '2022-06-17 01:51:53', 0),
-(4, 1, 'Galaxy Z Fold3 5G 256GB', 41990000, 34490000, 'https://clickbuy.com.vn/uploads/2021/10/3-1.jpg', 'Galaxy Z Fold3 5G (Z Fold 3) là chiếc điện thoại màn hình gập cao cấp nhất của Samsung. Z Fold 3 sẽ là chiếc điện thoại Samsung đầu tiên có camera dưới màn hình, đẳng cấp, góp phần mang đến những trải nghiệm mới mẻ, ấn tượng hơn cho người dùng.', '2022-06-17 01:51:53', '2022-06-17 01:51:53', 0),
-(5, 3, 'Xiaomi Redmi 10C', 3890000, 3690000, 'https://clickbuy.com.vn/uploads/2022/03/redmi10.jpg', 'Điện thoại Xiaomi Redmi 10C – Hiệu năng “khủng” trong tầm giá phải chăng. Xiaomi vừa cho ra mắt thêm một lựa chọn smartphone tuyệt vời trong phân khúc phổ thông: điện thoại Xiaomi Redmi 10C với màn hình lớn, hiệu năng “khủng” kèm thời lượng pin dài sẽ giúp người dùng công nghệ có được chiếc smartphone thích hợp cho năm 2022.', '2022-06-17 01:51:53', '2022-06-17 01:51:53', 0),
-(6, 3, 'Poco M4 Pro 5G (6GB/128GB)', 5790000, 5290000, 'https://clickbuy.com.vn/uploads/2022/02/3.jpg', 'POCO M4 Pro 5G chính là dòng điện thoại tầm trung được phát hành bởi công ty con của Xiaomi với nhiều cải tiến so với thế hệ tiền nhiệm. Chỉ sau một thời gian ngắn ra mắt, POCO M4 Pro 5G đã nhận được sự yêu thích và tin dùng từ nhiều người dùng.', '2022-06-17 01:51:53', '2022-06-17 01:51:53', 0),
-(7, 2, 'Apple iPhone 11 64GB', 17990000, 11990000, 'https://clickbuy.com.vn/uploads/2021/08/11-2.jpg', 'iPhone 11 vẫn sở hữu thiết kế tràn viền với “tai thỏ” giống iPhone X. Viền bezel phía trên và dưới cũng được làm gọn lại nhằm tối đa màn hình sử dụng. Cùng với đó, 4 góc của máy cũng được bo tròn nhẹ tạo cảm giác chắc chắn khi cầm trên tay. Mặt lưng iPhone 11 làm từ chất liệu kính nên rất sang trọng, tinh tế. Khác với các dòng iPhone trước, sản phẩm này sẽ có 6 màu bản bạc, vàng, xanh lá, trắng, đen đỏ.', '2022-06-17 01:51:53', '2022-06-17 01:51:53', 0),
-(9, 10, 'Nokia G10', 4190000, 3690000, 'https://clickbuy.com.vn/uploads/2021/11/nokia-g10.jpg', 'Nokia G10 là sản phẩm mới nhất với các ưu điểm chính là viên pin dung lượng lên tới 5050mAh hỗ trợ AI, màn hình lớn 6,5 inch, 3 camera sau và khả năng năng nhận diện khuôn mặt.', '2022-06-17 01:51:53', '2022-06-17 01:51:53', 0),
+(1, 2, 'iPhone 13 Pro Max 128GB', 34990000, 29690000, 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/1/_/1_66_6_2_1_11.jpg', 'iPhone 13 Pro Max – siêu phẩm được mong chờ nhất ở nửa cuối năm 2021 đến từ Apple. Máy có thiết kế không mấy đột phá khi so với người tiền nhiệm, bên trong đây vẫn là một sản phẩm có màn hình siêu đẹp, tần số quét được nâng cấp lên 120 Hz mượt mà, cảm biến camera có kích thước lớn hơn, cùng hiệu năng mạnh mẽ với sức mạnh đến từ Apple A15 Bionic, sẵn sàng cùng bạn chinh phục mọi thử thách.', '2022-11-08 07:38:15', '2022-11-08 07:38:15', 0),
+(2, 2, 'iPhone 13 mini 256GB', 24990000, 21990000, 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/1/3/13_4_7_2_2.jpg', 'iPhone 13 Mini – siêu phẩm được mong chờ nhất ở nửa cuối năm 2021 đến từ Apple. Máy có thiết kế không mấy đột phá khi so với người tiền nhiệm, bên trong đây vẫn là một sản phẩm có màn hình siêu đẹp, tần số quét được nâng cấp lên 120 Hz mượt mà, cảm biến camera có kích thước lớn hơn, cùng hiệu năng mạnh mẽ với sức mạnh đến từ Apple A15 Bionic, sẵn sàng cùng bạn chinh phục mọi thử thách.', '2022-11-08 07:39:49', '2022-11-08 07:39:49', 0),
+(3, 1, 'Samsung Galaxy S22 Ultra 5G', 20990000, 28990000, 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/s/m/sm-s908_galaxys22ultra_front_green_211119_3.jpg', 'Galaxy S22 Ultra 5G với bút S-Pen tích hợp. Samsung Galaxy S22 Ultra 5G (8GB|128GB) Chính hãng mang đến trải nghiệm di động tối ưu và cao cấp. Bằng cách kết hợp các tính năng tốt nhất của dòng Note và S', '2022-11-08 07:41:20', '2022-11-08 07:41:20', 0),
+(4, 1, 'Galaxy Z Fold3 5G 256GB', 41990000, 34490000, 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/g/a/galaxy-z-fold3-kv_5g__1p_cmyk_1_2_1.jpg', 'Galaxy Z Fold3 5G (Z Fold 3) là chiếc điện thoại màn hình gập cao cấp nhất của Samsung. Z Fold 3 sẽ là chiếc điện thoại Samsung đầu tiên có camera dưới màn hình, đẳng cấp, góp phần mang đến những trải nghiệm mới mẻ, ấn tượng hơn cho người dùng.', '2022-11-08 07:38:56', '2022-11-08 07:38:56', 0),
+(5, 3, 'Xiaomi Redmi 10C', 3890000, 3690000, 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/x/i/xiaomi-redmi-10c-1-003.jpg', 'Điện thoại Xiaomi Redmi 10C – Hiệu năng “khủng” trong tầm giá phải chăng. Xiaomi vừa cho ra mắt thêm một lựa chọn smartphone tuyệt vời trong phân khúc phổ thông: điện thoại Xiaomi Redmi 10C với màn hình lớn, hiệu năng “khủng” kèm thời lượng pin dài sẽ giúp người dùng công nghệ có được chiếc smartphone thích hợp cho năm 2022.', '2022-11-08 07:45:28', '2022-11-08 07:45:28', 0),
+(6, 3, 'Poco M4 Pro 5G (6GB/128GB)', 5790000, 5290000, 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/f/v/fvssxa.jpg', 'POCO M4 Pro 5G chính là dòng điện thoại tầm trung được phát hành bởi công ty con của Xiaomi với nhiều cải tiến so với thế hệ tiền nhiệm. Chỉ sau một thời gian ngắn ra mắt, POCO M4 Pro 5G đã nhận được sự yêu thích và tin dùng từ nhiều người dùng.', '2022-11-08 07:44:00', '2022-11-08 07:44:00', 0),
+(7, 2, 'Apple iPhone 11 64GB', 17990000, 11990000, 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/1/_/1_253_1.jpg', 'iPhone 11 vẫn sở hữu thiết kế tràn viền với “tai thỏ” giống iPhone X. Viền bezel phía trên và dưới cũng được làm gọn lại nhằm tối đa màn hình sử dụng. Cùng với đó, 4 góc của máy cũng được bo tròn nhẹ tạo cảm giác chắc chắn khi cầm trên tay. Mặt lưng iPhone 11 làm từ chất liệu kính nên rất sang trọng, tinh tế. Khác với các dòng iPhone trước, sản phẩm này sẽ có 6 màu bản bạc, vàng, xanh lá, trắng, đen đỏ.', '2022-11-08 07:40:41', '2022-11-08 07:40:41', 0),
+(9, 10, 'Nokia G10', 4190000, 3690000, 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/6/3/637649100605269420_nokia-c30-xanh-1_3.jpg', 'Nokia G10 là sản phẩm mới nhất với các ưu điểm chính là viên pin dung lượng lên tới 5050mAh hỗ trợ AI, màn hình lớn 6,5 inch, 3 camera sau và khả năng năng nhận diện khuôn mặt.', '2022-11-08 07:42:50', '2022-11-08 07:42:50', 0),
 (50, 1, 'Samsung Galaxy A73 (5G) 256GB', 12990000, 10690000, 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/a/7/a73-xanh.jpg', 'Điện thoại cao cấp nhất dòng Galaxy A series sở hữu nhiều nâng cấp đáng giá so với thế hệ trước, từ ngoại hình cho đến hiệu năng, đặc biệt là hệ thống camera. Sau đây là những đánh giá chi tiết về chiếc Samsung A73 giúp bạn có cái nhìn tổng quan nhất về chiếc smartphone cận cao cấp này.', '2022-06-17 01:55:16', '2022-06-17 01:55:16', 0),
 (51, 1, 'Samsung Galaxy S20 FE 256GB (Fan Edition)', 15490000, 10990000, 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/s/a/samsung-galaxy-20-fe_4_.jpg', 'Samsung S20 FE là chiếc điện thoại sắp được ra mắt từ Samsung, với chữ FE đằng sau tên gọi của máy có nghĩa là Fan Edition. Đây là dòng điện thoại ra mắt như để gửi lời tri ân đến các fan trung thành đã và đang sử dụng các sản phẩm của Samsung. Với số lượng sản phẩm được giới hạn và chỉ mở bán trong thời gian ngắn.', '2022-06-17 01:56:34', '2022-06-17 01:56:34', 0),
 (52, 2, 'iPhone 12 128GB I Chính hãng VN/A', 24990000, 17990000, 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/i/p/iphone-12_2__1.jpg', 'iPhone 12 hiện nay là cái tên “sốt xình xịch” bởi đây là một trong 4 siêu phẩm vừa được ra mắt của Apple với những đột phá về cả thiết kế lẫn cấu hình. Phiên bản Apple iPhone 12 128GB chính là một trong những chiếc iPhone được săn đón nhất bởi dung lượng bộ nhớ khủng, cho phép bạn thoải mái với vô vàn ứng dụng.', '2022-06-17 01:57:38', '2022-06-17 01:57:38', 0),
@@ -237,7 +203,11 @@ INSERT INTO `product` (`id`, `category_id`, `title`, `price`, `discount`, `thumb
 (73, 10, 'Nokia G21', 4290000, 3590000, 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/t/h/thumb_602966_default_big.jpg', 'Dù nằm trong phân khúc phổ thông, Nokia G21 sở hữu loạt thông số ấn tượng như camera 50 MP, màn hình lớn sắc nét, vi xử lý tốt cùng pin \"trâu\" giúp cho đây là sản phẩm smartphone dễ tiếp cận và phù hợp cho tất cả người dùng công nghệ.', '2022-06-18 02:46:56', '2022-06-18 02:46:56', 0),
 (74, 10, 'Nokia G50 (5G)', 6590000, 4590000, 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/n/o/nokia-g50-4_1.jpeg', 'Hãng điện thoại lừng danh Nokia vẫn chưa ngừng cuộc chơi trong thị phần smartphone. Bằng chứng là việc hãng vừa tung ra thị trường sản phẩm mới mang tên Nokia G50 - hỗ trợ mạng 5G với mức giá phổ thông cho tất cả người yêu công nghệ.', '2022-06-18 02:47:51', '2022-06-18 02:47:51', 0),
 (75, 1, 'Samsung Galaxy S20 Ultra', 29990000, 20990000, 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/6/3/637170935875912528_ss-s20-ultra-den-1.png', 'Samsung Galaxy S20 Ultra là flagship mới của dòng Galaxy S sẽ được Samsung giới thiệu vào đầu năm 2020. Đây là phiên bản cao cấp nhất bên cạnh phiên bản thường và bản Plus. Điện thoại sẽ được trang bị những tính năng tuyệt vời, dung lượng pin lớn, màn hình được trang bị tần số quét 120Hz, camera chính có độ phân giải 108mp sẽ là những tính năng nổi bật nhất. Để tiết kiệm chi phí nhưng vẫn có thể trải nghiệm các tính năng cao cấp, tham khảo ngay điện thoại Samsung S20 FE đang có mức giá cực hấp dẫn.', '2022-06-18 03:00:14', '2022-06-18 03:00:14', 0),
-(77, 1, 'Samsung Galaxy S21 Plus 5G', 25990000, 16990000, 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/s/a/samsung-galaxy-s21-plus-1.jpg', 'Có thể nói chiếc Samsung S21 Plus là một trong những chiếc điện thoại đáng được sở hữu nhất trong phân khúc tầm giá hiện tại. Với sự thay đổi thiết kế đột phá đi đầu trong phong cách thiết kế cùng với cấu hình cực kỳ mạnh mẽ của dòng S Plus của Samsung mang đến cho người dùng.', '2022-06-19 00:52:38', '2022-06-19 00:52:38', 0);
+(77, 1, 'Samsung Galaxy S21 Plus 5G', 25990000, 16990000, 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/s/a/samsung-galaxy-s21-plus-1.jpg', 'Có thể nói chiếc Samsung S21 Plus là một trong những chiếc điện thoại đáng được sở hữu nhất trong phân khúc tầm giá hiện tại. Với sự thay đổi thiết kế đột phá đi đầu trong phong cách thiết kế cùng với cấu hình cực kỳ mạnh mẽ của dòng S Plus của Samsung mang đến cho người dùng.', '2022-06-19 00:52:38', '2022-06-19 00:52:38', 0),
+(78, 112, 'Realme GT Neo 3 Naruto', 12990000, 11990000, 'https://cdn.mobilecity.vn/mobilecity-vn/images/2022/05/w300/realme-gt-neo-3-naruto.jpg', 'Realme đã trình làng phiên bản Realme GT Neo 3 kết hợp với phong cách ninja lấy cảm hứng từ bộ truyện tranh Naruto nổi tiếng đến từ Nhật Bản và sẽ có số lượng giới hạn chỉ 5000 sản phẩm. Chiếc máy này sở hữu ngoại hình nổi bật với tông màu cam chủ đạo tương tự bộ đồ của nhân vật trong bộ truyện cùng tên, đi kèm với đó là các chi tiết tạo điểm nhấn ở phần trên của mặt lưng máy cũng như cụm camera.', '2022-11-09 01:36:46', '2022-11-09 01:36:46', 0),
+(79, 112, 'Xiaomi Mi 6X Hatsune Miku', 11590000, 9290000, 'https://www.duchuymobile.com/images/detailed/11/Xiaomi-Mi-6X-Hatsune-Miku-Duchuymobile.png', 'Sau khi chính thức ra mắt Mi 6X, nhà sản xuất Xiaomi tiếp tục cho ra mắt phiên bản đặc biệt của thiết kế này với tên gọi Xiaomi Mi 6X Hatsune Miku.\r\n\r\nĐây là phiên bản đặc biệt, giới hạn chỉ 5000 con trên toàn thế giới nên rất ấn tượng và xuất sắc làm hài lòng các Fan của cô ca sĩ ảo Hatsune Miku và Fan Xiaomi.', '2022-11-09 01:39:03', '2022-11-09 01:39:03', 0),
+(80, 112, 'OnePlus 6 Avengers Infinity War', 18990000, 16890000, 'https://www.duchuymobile.com/images/variant_image/18/oneplus-6-avenger-thumbnail.jpg', 'OnePlus 6 Avengers Infinity War Edition phiên bản đặc biệt: Thiết kế ấn tượng, RAM 8GB, ROM 256GB.\r\nBên cạnh bản tiêu chuẩn thì OnePlus còn ra mắt thêm phiên bản đặc biệt mang tên OnePlus 6 Avengers Infinity War Edition hay gọi tắt là OnePlus 6 Avengers.\r\nMặt trước của hộp có logo OnePlus quen thuộc và chữ A, chữ viết tắt của Avengers. Phần chất liệu làm vỏ hộp cũng chắc chắn và trong cao cấp hơn.', '2022-11-09 01:41:32', '2022-11-09 01:41:32', 0),
+(81, 112, 'Realme GT Neo 2 Dragon Ball', 12990000, 10990000, 'https://cdn.mobilecity.vn/mobilecity-vn/images/2022/01/w300/realme-gt-neo-2-dragon-ball-edition-4-1.png', 'Ngày 4 tháng 1 năm 2022, tại Thâm Quyến, Trung Quốc - Hội nghị Thương hiệu xu hướng khoa học và công nghệ Realme, với chủ đề \"Budokai số 1 thế giới\", đã chính thức phát hành phiên bản mới của dòng GT Neo 2 đó là Realme GT Neo 2 Dragon Ball Custom Edition. Lần này, Realme đã bắt tay với Công ty truyện tranh IP Dragon Ball của Nhật Bản để tạo ra một sản phẩm lấy cảm hứng từ Goku và Thế giới Dragon Ball dành cho người hâm mộ yêu thích Dragon Ball. Từ trong ra ngoài, sản phẩm được in hình ảnh nhân vật, cài đặt kỹ năng và các yếu tố cổ điển của Dragon Ball. Thiết kế sản phẩm có tone \"máu nóng\", tạo ra những khác biệt cá tính, thời trang dành riêng cho giới trẻ và những người hâm mộ Dragon Ball.', '2022-11-12 07:49:37', '2022-11-12 07:49:37', 0);
 
 -- --------------------------------------------------------
 
@@ -275,7 +245,9 @@ CREATE TABLE `tokens` (
 --
 
 INSERT INTO `tokens` (`user_id`, `token`, `created_at`) VALUES
-(55, 'baaa4887aef2a00bb07412548b02fe36', '2022-06-19 02:49:42');
+(46, '3ca9c49d2ce1c3458862ed0580d69cd0', '2022-11-09 02:32:50'),
+(55, 'baaa4887aef2a00bb07412548b02fe36', '2022-06-19 02:49:42'),
+(56, '3d48921a2fa3fff8b9e69f59393ac999', '2022-11-12 08:50:13');
 
 -- --------------------------------------------------------
 
@@ -306,7 +278,8 @@ INSERT INTO `user` (`id`, `fullname`, `email`, `phone_number`, `address`, `passw
 (52, 'Test 123', '123@123.com', '123', 'Vĩnh Long', 'b4cbd48886a5331c5eb2fedadabe311c', 2, 1, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'),
 (53, 'Trọng Phúc', 'phuc.user@gmail.com', '09999999', 'Vĩnh Long', 'b4cbd48886a5331c5eb2fedadabe311c', 1, 0, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'),
 (54, 'Phúc Nguyễn', 'user3@gmail.com', '0906995989', 'Vĩnh Long', 'b4cbd48886a5331c5eb2fedadabe311c', 1, 0, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'),
-(55, 'Demo', 'demo@gmail.com', '0906995989', 'Vĩnh Long', 'b4cbd48886a5331c5eb2fedadabe311c', 1, 0, 'https://cdn-icons-png.flaticon.com/512/1674/1674291.png');
+(55, 'Demo', 'demo@gmail.com', '0906995989', 'Vĩnh Long', 'b4cbd48886a5331c5eb2fedadabe311c', 1, 0, 'https://cdn-icons-png.flaticon.com/512/1674/1674291.png'),
+(56, 'Phuc Nguyen', 'customer1@gmail.com', '+84388542487', 'Vĩnh Long, Vũng Liêm', 'b4cbd48886a5331c5eb2fedadabe311c', 1, 0, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -382,7 +355,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT cho bảng `category`
 --
 ALTER TABLE `category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=112;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=113;
 
 --
 -- AUTO_INCREMENT cho bảng `feedback`
@@ -394,25 +367,25 @@ ALTER TABLE `feedback`
 -- AUTO_INCREMENT cho bảng `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
 -- AUTO_INCREMENT cho bảng `order_details`
 --
 ALTER TABLE `order_details`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=103;
 
 --
 -- AUTO_INCREMENT cho bảng `payments`
 --
 ALTER TABLE `payments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT cho bảng `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=82;
 
 --
 -- AUTO_INCREMENT cho bảng `role`
@@ -424,7 +397,7 @@ ALTER TABLE `role`
 -- AUTO_INCREMENT cho bảng `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 
 --
 -- Các ràng buộc cho các bảng đã đổ

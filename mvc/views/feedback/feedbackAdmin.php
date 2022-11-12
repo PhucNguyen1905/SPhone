@@ -35,7 +35,7 @@ require_once('mvc/views/blocks/header_admin.php');
 					<td>' . $data["allFeedback"][$i]['updated_at'] . '</td>
 					<td style="width: 50px">';
 					if ($data["allFeedback"][$i]['status'] == 0) {
-						echo '<a href="http://localhost/BKPhone/FeedbackAdmin/updateStatusFeedback/' . $data["allFeedback"][$i]['id'] . '"><button class="btn btn-primary">Đã Đọc</button><a/>';
+						echo '<a href="http://localhost/SPhone/FeedbackAdmin/updateStatusFeedback/' . $data["allFeedback"][$i]['id'] . '"><button class="btn btn-primary">Đã Đọc</button><a/>';
 					}
 					echo '</td>
 				</tr>';

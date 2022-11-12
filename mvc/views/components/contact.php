@@ -3,7 +3,7 @@
 
 <nav id="nav-breadcrumb" aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="ml125 breadcrumb-item"><a href="http://localhost/BKPhone/Home">Trang chủ</a></li>
+        <li class="ml125 breadcrumb-item"><a href="http://localhost/SPhone/Home">Trang chủ</a></li>
         <li class="breadcrumb-item active" aria-current="page">Liên hệ</li>
     </ol>
 </nav>
@@ -25,7 +25,7 @@
 
         <!--Grid column-->
         <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="http://localhost/BKPhone/FeedbackAdmin/addFeedback" method="POST">
+            <form id="contact-form" name="contact-form" action="http://localhost/SPhone/FeedbackAdmin/addFeedback" method="POST">
 
                 <!--Grid row-->
                 <div class="row">

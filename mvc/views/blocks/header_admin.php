@@ -3,9 +3,9 @@ require_once "mvc/utility/utility.php";
 $user = getUserToken();
 if ($user != null) {
   if ($user["role_id"] == 1) {
-    header('Location: http://localhost/BKPhone/Login');
+    header('Location: http://localhost/SPhone/Login');
   }
-} else header('Location: http://localhost/BKPhone/Home');
+} else header('Location: http://localhost/SPhone/Home');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +25,7 @@ if ($user != null) {
   <!-- DataTables -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/dataTables.bootstrap4.min.css" />
   <!-- Custom css -->
-  <?php define('SCRIPT_ROOT', 'http://localhost/BKPhone'); ?>
+  <?php define('SCRIPT_ROOT', 'http://localhost/SPhone'); ?>
   <link rel="stylesheet" href="<?php echo SCRIPT_ROOT . '/public/css/admin_style.css'; ?>">
 
   <!-- jQuery library -->
@@ -47,28 +47,28 @@ if ($user != null) {
     <!-- ===========SIDE BAR============ -->
     <div class="bg-white" id="sidebar-wrapper">
       <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
-        <img src="<?php echo SCRIPT_ROOT . '/public/images/logo.png'; ?>" alt=""> <a href="http://localhost/BKPhone/Home" style="text-decoration: none;">BKPhone</a>
+        <img src="<?php echo SCRIPT_ROOT . '/public/images/logo.png'; ?>" alt=""> <a href="http://localhost/SPhone/Home" style="text-decoration: none;">SPhone</a>
       </div>
       <div class="list-group list-group-flush my-3">
-        <a href="http://localhost/BKPhone/OrderAdmin" class="<?php echo $activeNav == 'order' ? 'active ' : ' '; ?>list-group-item list-group-item-action bg-transparent second-text">
+        <a href="http://localhost/SPhone/OrderAdmin" class="<?php echo $activeNav == 'order' ? 'active ' : ' '; ?>list-group-item list-group-item-action bg-transparent second-text">
           <span class="material-icons-sharp me-2">receipt_long</span>Order
         </a>
-        <a href="http://localhost/BKPhone/CategoryAdmin" class="<?php echo $activeNav == 'category' ? 'active ' : ' '; ?>list-group-item list-group-item-action transparent second-text fw-bold">
+        <a href="http://localhost/SPhone/CategoryAdmin" class="<?php echo $activeNav == 'category' ? 'active ' : ' '; ?>list-group-item list-group-item-action transparent second-text fw-bold">
           <span class="material-icons-sharp me-2">format_list_bulleted</span>Category
         </a>
-        <a href="http://localhost/BKPhone/ProductAdmin" class="<?php echo $activeNav == 'phone' ? 'active ' : ' '; ?>list-group-item list-group-item-action transparent second-text fw-bold">
+        <a href="http://localhost/SPhone/ProductAdmin" class="<?php echo $activeNav == 'phone' ? 'active ' : ' '; ?>list-group-item list-group-item-action transparent second-text fw-bold">
           <span class="material-icons-sharp me-2">smartphone</span>Phone
         </a>
-        <a href="http://localhost/BKPhone/UserAdmin" class="<?php echo $activeNav == 'user' ? 'active ' : ' '; ?>list-group-item list-group-item-action transparent second-text fw-bold">
+        <a href="http://localhost/SPhone/UserAdmin" class="<?php echo $activeNav == 'user' ? 'active ' : ' '; ?>list-group-item list-group-item-action transparent second-text fw-bold">
           <span class="material-icons-sharp me-2">person_outline</span>User
         </a>
-        <a href="http://localhost/BKPhone/FeedbackAdmin" class="<?php echo $activeNav == 'feedback' ? 'active ' : ' '; ?>list-group-item list-group-item-action transparent second-text fw-bold">
+        <a href="http://localhost/SPhone/FeedbackAdmin" class="<?php echo $activeNav == 'feedback' ? 'active ' : ' '; ?>list-group-item list-group-item-action transparent second-text fw-bold">
           <span class="material-icons-sharp me-2">chat</span>Feedback
         </a>
-        <a href="http://localhost/BKPhone/Admin" class="<?php echo $activeNav == 'analytic' ? 'active ' : ' '; ?>list-group-item list-group-item-action transparent second-text fw-bold">
+        <a href="http://localhost/SPhone/Admin" class="<?php echo $activeNav == 'analytic' ? 'active ' : ' '; ?>list-group-item list-group-item-action transparent second-text fw-bold">
           <span class="material-icons-sharp me-2">insights</span>Analytics
         </a>
-        <a href="http://localhost/BKPhone/Login/UserLogout" class="list-group-item list-group-item-action transparent second-text fw-bold">
+        <a href="http://localhost/SPhone/Login/UserLogout" class="list-group-item list-group-item-action transparent second-text fw-bold">
           <span class="material-icons-sharp me-2">logout</span>Logout
         </a>
 

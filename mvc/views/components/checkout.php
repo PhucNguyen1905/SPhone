@@ -1,7 +1,7 @@
 <!--Section: Block Content-->
 <nav id="nav-breadcrumb" aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="ml125 breadcrumb-item"><a href="http://localhost/BKPhone/Home">Trang chủ</a></li>
+    <li class="ml125 breadcrumb-item"><a href="http://localhost/SPhone/Home">Trang chủ</a></li>
     <li class="breadcrumb-item active" aria-current="page">Đặt hàng</li>
   </ol>
 </nav>
@@ -18,7 +18,7 @@
         <h5 class="mb-4 pb-1">Thủ tục thanh toán</h5>
 
         <!-- Grid row -->
-        <form method="POST" action="http://localhost/BKPhone/OrderAdmin/addOrderSuccess">
+        <form method="POST" action="http://localhost/SPhone/OrderAdmin/addOrderSuccess">
           <div class="row">
             <!-- Grid column -->
             <div class="col-lg-12">

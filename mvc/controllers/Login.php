@@ -32,12 +32,12 @@ class Login extends Controller
 
             if ($kq["result"]) {
                 if ($kq["role_id"] == 1) {
-                    header('Location: http://localhost/BKPhone/Home');
+                    header('Location: http://localhost/SPhone/Home');
                 } else {
-                    header('Location: http://localhost/BKPhone/OrderAdmin');
+                    header('Location: http://localhost/SPhone/OrderAdmin');
                 }
             } else {
-                header('Location: http://localhost/BKPhone/Login');
+                header('Location: http://localhost/SPhone/Login');
             }
         }
     }
@@ -52,6 +52,6 @@ class Login extends Controller
             setcookie('token', '', time() - 100, '/');
         }
         session_destroy();
-        header('Location: http://localhost/BKPhone/Home');
+        header('Location: http://localhost/SPhone/Home');
     }
 }

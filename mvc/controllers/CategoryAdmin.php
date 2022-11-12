@@ -30,7 +30,7 @@ class CategoryAdmin extends Controller
             $name = getPost("name");
             $this->categoryModel->insertCategory($name);
         }
-        header('Location: http://localhost/BKPhone/CategoryAdmin');
+        header('Location: http://localhost/SPhone/CategoryAdmin');
     }
 
     public function ViewEdit($id)
@@ -50,15 +50,15 @@ class CategoryAdmin extends Controller
             $name = getPost('name');
             $this->categoryModel->updateCategory($name, $id);
         }
-        header('Location: http://localhost/BKPhone/CategoryAdmin');
+        header('Location: http://localhost/SPhone/CategoryAdmin');
     }
 
     public function Delete($id)
     {
         $data = $this->categoryModel->selectCategoryDelete($id);
         if ($data)
-            header('Location: http://localhost/BKPhone/CategoryAdmin');
-        else header('Location: http://localhost/BKPhone/CategoryAdmin/GetPage/1');
+            header('Location: http://localhost/SPhone/CategoryAdmin');
+        else header('Location: http://localhost/SPhone/CategoryAdmin/GetPage/1');
     }
 
     public function checkDelete($id)

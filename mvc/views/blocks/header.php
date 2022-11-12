@@ -27,18 +27,18 @@ foreach ($cart as $item) {
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>BKPhone</title>
+    <title>SPhone</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="http://localhost/BKPhone/public/images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="http://localhost/SPhone/public/images/favicon.png">
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="http://localhost/BKPhone/public/css/style.css">
+    <link rel="stylesheet" href="http://localhost/SPhone/public/css/style.css">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
     <!-- Modernizr js -->
-    <link href="http://localhost/BKPhone/public/fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet">
+    <link href="http://localhost/SPhone/public/fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet">
     <!--load all styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -58,9 +58,9 @@ foreach ($cart as $item) {
 <body>
     <!-- Begin Header -->
     <nav id="navColor" class=" navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand my-2 my-md-1" href="http://localhost/BKPhone/Home">
+        <a class="navbar-brand my-2 my-md-1" href="http://localhost/SPhone/Home">
             <img src="https://fenr.hcmut.edu.vn/uploads/img-website/logo-1638852988.jpg" alt="logo-school">
-            <span class="h2 mb-0 fw-bold text-warning">BKPhone</span>
+            <span class="h2 mb-0 fw-bold text-warning">SPhone</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -69,34 +69,34 @@ foreach ($cart as $item) {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item <?php if ($data["render"] != "tintuc" && $data["render"] != "gioithieu" && $data["render"] != "contact") echo "active"; ?>">
-                    <a class="nav-link text-warning fw-bold" href="http://localhost/BKPhone/Home">Trang chủ <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-warning fw-bold" href="http://localhost/SPhone/Home">Trang chủ <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link text-warning fw-bold dropdown-toggle" href="http://localhost/BKPhone/Home/productList" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link text-warning fw-bold dropdown-toggle" href="http://localhost/SPhone/Home/productList" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Sản phẩm
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="nav-link text-warning fw-bold dropdown-item" href="http://localhost/BKPhone/Home/productList/0">Tất cả</a>
+                        <a class="nav-link text-warning fw-bold dropdown-item" href="http://localhost/SPhone/Home/productList/0">Tất cả</a>
                         <?php
                         $countCategory = count($data["allCategory"]);
                         for ($i = 0; $i < $countCategory; $i++) {
-                            echo   '<a class="text-warning fw-bold dropdown-item" href="http://localhost/BKPhone/Home/productList/' . $data["allCategory"][$i]["id"] . '">' . $data["allCategory"][$i]["name"] . '</a>';
+                            echo   '<a class="text-warning fw-bold dropdown-item" href="http://localhost/SPhone/Home/productList/' . $data["allCategory"][$i]["id"] . '">' . $data["allCategory"][$i]["name"] . '</a>';
                         }
 
                         ?>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-warning fw-bold <?php if ($data["render"] == "tintuc") echo "active"; ?>" href="http://localhost/BKPhone/Home/tintuc">Tin tức</a>
+                    <a class="nav-link text-warning fw-bold <?php if ($data["render"] == "tintuc") echo "active"; ?>" href="http://localhost/SPhone/Home/tintuc">Tin tức</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-warning fw-bold <?php if ($data["render"] == "gioithieu") echo "active"; ?>" href="http://localhost/BKPhone/Home/gioithieu">Giới thiệu</a>
+                    <a class="nav-link text-warning fw-bold <?php if ($data["render"] == "gioithieu") echo "active"; ?>" href="http://localhost/SPhone/Home/gioithieu">Giới thiệu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-warning fw-bold <?php if ($data["render"] == "contact") echo "active"; ?>" href="http://localhost/BKPhone/Home/contact">Liên hệ</a>
+                    <a class="nav-link text-warning fw-bold <?php if ($data["render"] == "contact") echo "active"; ?>" href="http://localhost/SPhone/Home/contact">Liên hệ</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0" method="POST" action="http://localhost/BKPhone/Home/search_buttuon">
+            <form class="form-inline my-2 my-lg-0" method="POST" action="http://localhost/SPhone/Home/search_buttuon">
                 <input class="form-control mr-sm-2" type="search" id="search_name" name="search_name" placeholder="Search..." aria-label="Search">
                 <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Tìm kiếm</button>
             </form>
@@ -111,13 +111,13 @@ foreach ($cart as $item) {
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <?php
                     if (!isset($fullname)) {
-                        echo '<a class="dropdown-item" href="http://localhost/BKPhone/Login">Đăng nhập</a>';
-                        echo '<a class="dropdown-item" href="http://localhost/BKPhone/Register">Đăng ký</a>';
+                        echo '<a class="dropdown-item" href="http://localhost/SPhone/Login">Đăng nhập</a>';
+                        echo '<a class="dropdown-item" href="http://localhost/SPhone/Register">Đăng ký</a>';
                     } else {
-                        if ($user["role_id"] == 2) echo '<a class="dropdown-item" href="http://localhost/BKPhone/OrderAdmin">Quản lý trang web</a>';
-                        echo '<a class="dropdown-item" href="http://localhost/BKPhone/Home/ManageAccount">Quản lý tài khoản</a>';
-                        echo '<a class="dropdown-item" href="http://localhost/BKPhone/Home/quanlydonhang/' . $user["id"] . '">Quản lý đơn hàng</a>';
-                        echo '<a class="dropdown-item" href="http://localhost/BKPhone/Login/UserLogout">Đăng xuất</a>';
+                        if ($user["role_id"] == 2) echo '<a class="dropdown-item" href="http://localhost/SPhone/OrderAdmin">Quản lý trang web</a>';
+                        echo '<a class="dropdown-item" href="http://localhost/SPhone/Home/ManageAccount">Quản lý tài khoản</a>';
+                        echo '<a class="dropdown-item" href="http://localhost/SPhone/Home/quanlydonhang/' . $user["id"] . '">Quản lý đơn hàng</a>';
+                        echo '<a class="dropdown-item" href="http://localhost/SPhone/Login/UserLogout">Đăng xuất</a>';
                     }
 
                     ?>
@@ -125,7 +125,7 @@ foreach ($cart as $item) {
                 </div>
             </div>
             <div class="shopping_cart">
-                <a style="font-size: 30px;color:#ffc107" href="http://localhost/BKPhone/Home/card"><i class="shopping_cart fas fa-shopping-cart"></i></a>
+                <a style="font-size: 30px;color:#ffc107" href="http://localhost/SPhone/Home/card"><i class="shopping_cart fas fa-shopping-cart"></i></a>
                 <span class="mount_product"><?= $count ?></span>
             </div>
         </div>
@@ -143,7 +143,7 @@ foreach ($cart as $item) {
                 var search_name = $("#search_name").val();
                 if ($("#search_name").val() != '') {
                     $.ajax({
-                        url: "http://localhost/BKPhone/Home/search",
+                        url: "http://localhost/SPhone/Home/search",
                         method: "POST",
                         data: {
                             action: action,

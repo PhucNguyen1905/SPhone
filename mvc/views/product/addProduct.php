@@ -11,10 +11,10 @@ require_once('mvc/views/blocks/header_admin.php');
 <div class="row" style="margin-top: 20px;">
     <div class="col-md-12 table-responsive">
         <h3>Add new phone</h3>
-        <a href="http://localhost/BKPhone/ProductAdmin" class="btn btn-outline-primary">Back to Phone list</a>
+        <a href="http://localhost/SPhone/ProductAdmin" class="btn btn-outline-primary">Back to Phone list</a>
         <div class="panel panel-primary">
             <div class="panel-body">
-                <form method="post" enctype="multipart/form-data" action="http://localhost/BKPhone/ProductAdmin/PostAdd">
+                <form method="post" enctype="multipart/form-data" action="http://localhost/SPhone/ProductAdmin/PostAdd">
                     <div class="row">
                         <div class="col-md-9 col-12">
                             <div class="form-group">

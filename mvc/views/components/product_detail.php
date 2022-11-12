@@ -1,6 +1,6 @@
 <nav id="nav-breadcrumb" aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="ml125 breadcrumb-item"><a href="http://localhost/BKPhone/Home">Trang chủ</a></li>
+    <li class="ml125 breadcrumb-item"><a href="http://localhost/SPhone/Home">Trang chủ</a></li>
     <li class="breadcrumb-item active" aria-current="page"><?= $data["productCategory"] ?></li>
   </ol>
 </nav>
@@ -79,7 +79,7 @@
         }
         ?>
         <h5 class="mt-4">Thêm bài đánh giá</h5>
-        <form form method="post" enctype="multipart/form-data" action="http://localhost/BKPhone/FeedbackAdmin/addFeedback">
+        <form form method="post" enctype="multipart/form-data" action="http://localhost/SPhone/FeedbackAdmin/addFeedback">
           <!-- Your review -->
           <input type="text" name="product_id" value="<?= $data["productItem"]["id"] ?>" hidden="true">
           <input type="text" name="user_id" value="<?= $user["id"] ?>" hidden="true">
@@ -104,13 +104,13 @@
     for ($i = 0; $i < 4; $i++) {
       echo '<div class="col-sm">';
       echo    '<div class="card">';
-      echo        '<a href="http://localhost/BKPhone/Home/productDetail/' . $data["allProductCategory"][$i]["id"] . '">
+      echo        '<a href="http://localhost/SPhone/Home/productDetail/' . $data["allProductCategory"][$i]["id"] . '">
                         <img class="card-img-top"
                             src="' . $data["allProductCategory"][$i]["thumbnail"] . '"
                             alt="Card image cap">
                     </a>';
       echo        '<div class="card-body">';
-      echo            '<a id="taga" href="http://localhost/BKPhone/Home/productDetail/' . $data["allProductCategory"][$i]["id"] . '"><h5 class="card-title">' . $data["allProductCategory"][$i]["title"] . '</h5></a>
+      echo            '<a id="taga" href="http://localhost/SPhone/Home/productDetail/' . $data["allProductCategory"][$i]["id"] . '"><h5 class="card-title">' . $data["allProductCategory"][$i]["title"] . '</h5></a>
                         <hr />';
       echo            '<span class="card-text">' . number_format($data["allProductCategory"][$i]["discount"]) . 'đ</span>';
       echo            '<span style="margin-left:12px; text-decoration: line-through;" class="card-text">';

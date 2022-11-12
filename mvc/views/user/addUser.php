@@ -7,13 +7,13 @@ require_once('mvc/views/blocks/header_admin.php');
 <div class="row" style="margin-top: 20px;">
 	<div class="col-md-12 table-responsive">
 		<h3>Add account</h3>
-		<a href="http://localhost/BKPhone/UserAdmin" class="btn btn-outline-primary">Back to User list</a>
+		<a href="http://localhost/SPhone/UserAdmin" class="btn btn-outline-primary">Back to User list</a>
 		<div class="panel panel-primary">
 			<div class="panel-heading">
 				<h5 style="color: red;"></h5>
 			</div>
 			<div class="panel-body">
-				<form method="post" action="http://localhost/BKPhone/UserAdmin/PostAdd/">
+				<form method="post" action="http://localhost/SPhone/UserAdmin/PostAdd/">
 					<div class="form-group">
 						<label for="usr"> Name:</label>
 						<input required="true" type="text" class="form-control" id="usr" name="fullname">

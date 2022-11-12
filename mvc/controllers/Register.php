@@ -33,8 +33,8 @@ class Register extends Controller
             $kq = $this->UserModel->InsertNewUser($fullname, $email, $password, $phone_number, $address);
             // show home
             if ($kq["result"]) {
-                header('Location: http://localhost/BKPhone/Login');
-            } else header('Location: http://localhost/BKPhone/Register/GetPage/0');
+                header('Location: http://localhost/SPhone/Login');
+            } else header('Location: http://localhost/SPhone/Register/GetPage/0');
         }
     }
 }

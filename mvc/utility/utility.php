@@ -85,7 +85,7 @@ function getUserToken($noSession=0) {
 
 
 
-function fixUrl($thumbnail, $rootPath = "http://localhost/BKPhone/public/images/") {
+function fixUrl($thumbnail, $rootPath = "http://localhost/SPhone/public/images/") {
 	if(stripos($thumbnail, 'http://') !== false || stripos($thumbnail, 'https://') !== false) {
 	} else {
 		$thumbnail = $rootPath.$thumbnail;

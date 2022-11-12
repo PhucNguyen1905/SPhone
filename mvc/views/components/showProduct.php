@@ -1,6 +1,6 @@
 <div id="wrapper">
 
-    <a style="color:black;text-decoration:none" href="http://localhost/BKPhone/Home/productList/1">
+    <a style="color:black;text-decoration:none" href="http://localhost/SPhone/Home/productList/1">
         <h3 style="margin-left:20px; margin-top: 15px">Huawei</h3>
     </a>
     <hr />
@@ -11,13 +11,13 @@
                 for ($i = 0; $i < 6; $i++) {
                     echo '<div class="item p-2">';
                     echo    '<div class="card">';
-                    echo        '<a href="http://localhost/BKPhone/Home/productDetail/' . $data["productHuawei"][$i]["id"] . '">
+                    echo        '<a href="http://localhost/SPhone/Home/productDetail/' . $data["productHuawei"][$i]["id"] . '">
                             <img class="card-img-top "
                                 src="' . $data["productHuawei"][$i]["thumbnail"] . '"
                                 alt="Card image cap">
                         </a>';
                     echo        '<div class="card-body">';
-                    echo            '<a id="taga" href="http://localhost/BKPhone/Home/productDetail/' . $data["productHuawei"][$i]["id"] . '"><h5 class="card-title">' . $data["productHuawei"][$i]["title"] . '</h5></a>
+                    echo            '<a id="taga" href="http://localhost/SPhone/Home/productDetail/' . $data["productHuawei"][$i]["id"] . '"><h5 class="card-title">' . $data["productHuawei"][$i]["title"] . '</h5></a>
                             <hr />';
                     echo            '<span class="card-text">' . number_format($data["productHuawei"][$i]["discount"]) . 'đ</span>';
                     echo            '<span style="margin-left:12px; text-decoration: line-through;" class="card-text">';
@@ -32,7 +32,7 @@
         </div>
     </div>
 
-    <a style="color:black;text-decoration:none" href="http://localhost/BKPhone/Home/productList/2">
+    <a style="color:black;text-decoration:none" href="http://localhost/SPhone/Home/productList/2">
         <h3 style="margin-left:20px; margin-top: 15px">Iphone</h3>
     </a>
     <hr />
@@ -43,13 +43,13 @@
                 for ($i = 0; $i < 6; $i++) {
                     echo '<div class="item p-2">';
                     echo    '<div class="card">';
-                    echo        '<a href="http://localhost/BKPhone/Home/productDetail/' . $data["productIphone"][$i]["id"] . '">
+                    echo        '<a href="http://localhost/SPhone/Home/productDetail/' . $data["productIphone"][$i]["id"] . '">
                             <img class="card-img-top "
                                 src="' . $data["productIphone"][$i]["thumbnail"] . '"
                                 alt="Card image cap">
                         </a>';
                     echo        '<div class="card-body">';
-                    echo            '<a id="taga" href="http://localhost/BKPhone/Home/productDetail/' . $data["productIphone"][$i]["id"] . '"><h5 class="card-title">' . $data["productIphone"][$i]["title"] . '</h5></a>
+                    echo            '<a id="taga" href="http://localhost/SPhone/Home/productDetail/' . $data["productIphone"][$i]["id"] . '"><h5 class="card-title">' . $data["productIphone"][$i]["title"] . '</h5></a>
                             <hr />';
                     echo            '<span class="card-text">' . number_format($data["productIphone"][$i]["discount"]) . 'đ</span>';
                     echo            '<span style="margin-left:12px; text-decoration: line-through;" class="card-text">';
@@ -64,7 +64,7 @@
         </div>
     </div>
 
-    <a style="color:black;text-decoration:none" href="http://localhost/BKPhone/Home/productList/3">
+    <a style="color:black;text-decoration:none" href="http://localhost/SPhone/Home/productList/3">
         <h3 style="margin-left:20px; margin-top: 15px">Samsung</h3>
     </a>
     <hr />
@@ -75,13 +75,13 @@
                 for ($i = 0; $i < 6; $i++) {
                     echo '<div class="item p-2">';
                     echo    '<div class="card">';
-                    echo        '<a href="http://localhost/BKPhone/Home/productDetail/' . $data["productSamsung"][$i]["id"] . '">
+                    echo        '<a href="http://localhost/SPhone/Home/productDetail/' . $data["productSamsung"][$i]["id"] . '">
                             <img class="card-img-top "
                                 src="' . $data["productSamsung"][$i]["thumbnail"] . '"
                                 alt="Card image cap">
                         </a>';
                     echo        '<div class="card-body">';
-                    echo            '<a id="taga" href="http://localhost/BKPhone/Home/productDetail/' . $data["productSamsung"][$i]["id"] . '"><h5 class="card-title">' . $data["productSamsung"][$i]["title"] . '</h5></a>
+                    echo            '<a id="taga" href="http://localhost/SPhone/Home/productDetail/' . $data["productSamsung"][$i]["id"] . '"><h5 class="card-title">' . $data["productSamsung"][$i]["title"] . '</h5></a>
                             <hr />';
                     echo            '<span class="card-text">' . number_format($data["productSamsung"][$i]["discount"]) . 'đ</span>';
                     echo            '<span style="margin-left:12px; text-decoration: line-through;" class="card-text">';
@@ -96,7 +96,7 @@
         </div>
     </div>
 
-    <a style="color:black;text-decoration:none" href="http://localhost/BKPhone/Home/productList/102">
+    <a style="color:black;text-decoration:none" href="http://localhost/SPhone/Home/productList/102">
         <h3 style="margin-left:20px; margin-top: 15px">Xiaomi</h3>
     </a>
     <hr />
@@ -107,13 +107,13 @@
                 for ($i = 0; $i < 6; $i++) {
                     echo '<div class="item p-2">';
                     echo    '<div class="card">';
-                    echo        '<a href="http://localhost/BKPhone/Home/productDetail/' . $data["productXiaomi"][$i]["id"] . '">
+                    echo        '<a href="http://localhost/SPhone/Home/productDetail/' . $data["productXiaomi"][$i]["id"] . '">
                             <img class="card-img-top "
                                 src="' . $data["productXiaomi"][$i]["thumbnail"] . '"
                                 alt="Card image cap">
                         </a>';
                     echo        '<div class="card-body">';
-                    echo            '<a id="taga" href="http://localhost/BKPhone/Home/productDetail/' . $data["productXiaomi"][$i]["id"] . '"><h5 class="card-title">' . $data["productXiaomi"][$i]["title"] . '</h5></a>
+                    echo            '<a id="taga" href="http://localhost/SPhone/Home/productDetail/' . $data["productXiaomi"][$i]["id"] . '"><h5 class="card-title">' . $data["productXiaomi"][$i]["title"] . '</h5></a>
                             <hr />';
                     echo            '<span class="card-text">' . number_format($data["productXiaomi"][$i]["discount"]) . 'đ</span>';
                     echo            '<span style="margin-left:12px; text-decoration: line-through;" class="card-text">';
@@ -128,7 +128,7 @@
         </div>
     </div>
 
-    <a style="color:black;text-decoration:none" href="http://localhost/BKPhone/Home/productList/104">
+    <a style="color:black;text-decoration:none" href="http://localhost/SPhone/Home/productList/104">
         <h3 style="margin-left:20px; margin-top: 15px">Nokia</h3>
     </a>
     <hr />
@@ -139,13 +139,13 @@
                 for ($i = 0; $i < 6; $i++) {
                     echo '<div class="item p-2">';
                     echo    '<div class="card">';
-                    echo        '<a href="http://localhost/BKPhone/Home/productDetail/' . $data["productNokia"][$i]["id"] . '">
+                    echo        '<a href="http://localhost/SPhone/Home/productDetail/' . $data["productNokia"][$i]["id"] . '">
                             <img class="card-img-top "
                                 src="' . $data["productNokia"][$i]["thumbnail"] . '"
                                 alt="Card image cap">
                         </a>';
                     echo        '<div class="card-body">';
-                    echo            '<a id="taga" href="http://localhost/BKPhone/Home/productDetail/' . $data["productNokia"][$i]["id"] . '"><h5 class="card-title">' . $data["productNokia"][$i]["title"] . '</h5></a>
+                    echo            '<a id="taga" href="http://localhost/SPhone/Home/productDetail/' . $data["productNokia"][$i]["id"] . '"><h5 class="card-title">' . $data["productNokia"][$i]["title"] . '</h5></a>
                             <hr />';
                     echo            '<span class="card-text">' . number_format($data["productNokia"][$i]["discount"]) . 'đ</span>';
                     echo            '<span style="margin-left:12px; text-decoration: line-through;" class="card-text">';

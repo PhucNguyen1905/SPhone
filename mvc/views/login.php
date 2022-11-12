@@ -3,9 +3,9 @@ require_once "mvc/utility/utility.php";
 $user = getUserToken();
 if ($user != null) {
     if ($user["role_id"] == 1) {
-        header('Location: http://localhost/BKPhone/Home');
+        header('Location: http://localhost/SPhone/Home');
     } else {
-        header('Location: http://localhost/BKPhone/OrderAdmin');
+        header('Location: http://localhost/SPhone/OrderAdmin');
     }
 }
 ?>
@@ -18,13 +18,13 @@ if ($user != null) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://localhost/BKPhone/public/css/login.css">
+    <link rel="stylesheet" href="http://localhost/SPhone/public/css/login.css">
     <title>Login</title>
 </head>
 
 <body>
 
-    <form id="form_login" action="http://localhost/BKPhone/Login/UserLogin" method="post">
+    <form id="form_login" action="http://localhost/SPhone/Login/UserLogin" method="post">
         <h4>ĐĂNG NHẬP</h4>
         <div class="md-form md-outline mt-0">
             <label for="form19">Email</label>
@@ -43,9 +43,9 @@ if ($user != null) {
 
         ?>
         <div>
-            <a id="link_register" href="http://localhost/BKPhone/Register">Đăng ký tài khoản</a>
+            <a id="link_register" href="http://localhost/SPhone/Register">Đăng ký tài khoản</a>
             <button type="submit" onclick="checkLogin()" name="btnLogin" class="btn btn-primary">Login</button>
-            <a id="link_register" href="http://localhost/BKPhone/Home">Trở về trang chủ</a>
+            <a id="link_register" href="http://localhost/SPhone/Home">Trở về trang chủ</a>
         </div>
     </form>
 

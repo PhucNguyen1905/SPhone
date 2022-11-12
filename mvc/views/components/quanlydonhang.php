@@ -17,7 +17,7 @@
     for ($i = 0; $i < $countOrderItem; $i++) {
       echo '<tr>
         <td>' . ($i + 1) . '</td>
-        <td><a href="http://localhost/BKPhone/Home/viewOrder/' . $data["orderItem"][$i]["id"] . '">' . $data["orderItem"][$i]["fullname"] . '</a></td>
+        <td><a href="http://localhost/SPhone/Home/viewOrder/' . $data["orderItem"][$i]["id"] . '">' . $data["orderItem"][$i]["fullname"] . '</a></td>
         <td>' . $data["orderItem"][$i]["phone"] . '</td>
         <td>' . $data["orderItem"][$i]["created_at"] . '</td>
         <td>' . number_format($data["orderItem"][$i]["total_money"]) . ' đ</td>
@@ -29,7 +29,7 @@
       else echo "Giao dịch hoàn tất!";
       echo '</td>';
       if ($data["orderItem"][$i]["status"] != 3)
-        echo '<td><a href="http://localhost/BKPhone/Home/confirmOrder/' . $data["orderItem"][$i]["id"] . '/' . $user["id"] . '"><button class="btn btn-danger">Đã nhận hàng</button><a/></td>
+        echo '<td><a href="http://localhost/SPhone/Home/confirmOrder/' . $data["orderItem"][$i]["id"] . '/' . $user["id"] . '"><button class="btn btn-danger">Đã nhận hàng</button><a/></td>
       </tr>';
     }
     ?>

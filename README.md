@@ -1,4 +1,4 @@
-# BKPhone
+# SPhone
 
 Frontend: HTML, CSS, JavaScript + Bootstrap 5
 
@@ -8,9 +8,8 @@ Database: MySQL
 
 
 # Tips for running
-Đổi tên PhoneTMDT -> BKPhone
 
-Create schema named **bkphone** and run sql script **bkphone.sql**
+Create schema named **sphone** and run sql script **sphone.sql**
 
 Thay đổi thư mục Web Root (Đường dẫn mặc định trong XAMPP:
 C:\xampp\htdocs)

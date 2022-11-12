@@ -7,7 +7,7 @@ require_once('mvc/views/blocks/header_admin.php');
 <div class="row" style="margin-top: 20px;">
 	<div class="col-md-12">
 		<h3>Order Detail</h3>
-		<a href="http://localhost/BKPhone/OrderAdmin" class="btn btn-outline-primary">Back to Order list</a>
+		<a href="http://localhost/SPhone/OrderAdmin" class="btn btn-outline-primary">Back to Order list</a>
 	</div>
 	<div class="col-md-8 table-responsive">
 		<table class="table table-bordered table-hover" style="margin-top: 20px;">

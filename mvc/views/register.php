@@ -3,9 +3,9 @@ require_once "mvc/utility/utility.php";
 $user = getUserToken();
 if ($user != null) {
   if ($user["role_id"] == 1) {
-    header('Location: http://localhost/BKPhone/Home');
+    header('Location: http://localhost/SPhone/Home');
   } else {
-    header('Location: http://localhost/BKPhone/admin');
+    header('Location: http://localhost/SPhone/admin');
   }
 }
 ?>
@@ -17,13 +17,13 @@ if ($user != null) {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="http://localhost/BKPhone/public/css/register.css">
+  <link rel="stylesheet" href="http://localhost/SPhone/public/css/register.css">
   <title>Register</title>
 </head>
 
 <body>
 
-  <form id="form_register" action="http://localhost/BKPhone/Register/UserRegister" method="post">
+  <form id="form_register" action="http://localhost/SPhone/Register/UserRegister" method="post">
     <h4>ĐĂNG KÝ TÀI KHOẢN</h4>
     <p class="d-none" id="checkEmail"><?= $data["checkEmail"] ?></p>
     <div class="form-group">
@@ -58,9 +58,9 @@ if ($user != null) {
       <input type="text" class="form-control" id="address" name="address">
     </div>
     <div>
-      <a id="link_login" href="http://localhost/BKPhone/Login">Tôi đã có tài khoản</a>
+      <a id="link_login" href="http://localhost/SPhone/Login">Tôi đã có tài khoản</a>
       <button type="submit" onclick="checkRegister()" name="btnRegister" class="btn btn-primary">Đăng ký</button>
-      <a id="link_register" href="http://localhost/BKPhone/Home">Trở về trang chủ</a>
+      <a id="link_register" href="http://localhost/SPhone/Home">Trở về trang chủ</a>
     </div>
 
   </form>

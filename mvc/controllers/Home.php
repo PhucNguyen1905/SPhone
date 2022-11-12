@@ -122,7 +122,7 @@ class Home extends Controller
 
     public function addToCart()
     {
-        header('Location: http://localhost/BKPhone/Login');
+        header('Location: http://localhost/SPhone/Login');
         if (!empty($_POST)) {
             $action = getPost('action');
             $id = getPost('productId');
@@ -322,12 +322,12 @@ class Home extends Controller
                     <div style="margin: 0 auto;" class="row">
                         <div class="col-4" style="">
                             <div class="image">
-                            <a href="http://localhost/BKPhone/Home/productDetail/' . $rows["id"] . '"><img src="' . $rows["thumbnail"] . '" style="width: 75%;padding-right: 0;"></a>
+                            <a href="http://localhost/SPhone/Home/productDetail/' . $rows["id"] . '"><img src="' . $rows["thumbnail"] . '" style="width: 75%;padding-right: 0;"></a>
                             </div>
                         </div>
                         <div class="col-8" style="">
                             <div class="name-product">
-                                <a href="http://localhost/BKPhone/Home/productDetail/' . $rows["id"] . '">' . $rows["title"] . '</a>
+                                <a href="http://localhost/SPhone/Home/productDetail/' . $rows["id"] . '">' . $rows["title"] . '</a>
                             </div>
                             <div class="price">
                                 <p>' . number_format($rows["price"]) . '&nbspVNĐ</p>

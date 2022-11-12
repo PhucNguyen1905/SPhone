@@ -13,7 +13,7 @@ require_once('mvc/views/blocks/header_admin.php');
         <h3>Sửa thông tin Sản Phẩm</h3>
         <div class="panel panel-primary">
             <div class="panel-body">
-                <form method="post" enctype="multipart/form-data" action="http://localhost/BKPhone/ProductAdmin/PostEdit/'..'">
+                <form method="post" enctype="multipart/form-data" action="http://localhost/SPhone/ProductAdmin/PostEdit/'..'">
                     <div class="row">
                         <div class="col-md-9 col-12">
                             <div class="form-group">

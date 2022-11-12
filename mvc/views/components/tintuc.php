@@ -1,6 +1,6 @@
 <nav id="nav-breadcrumb" aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="ml125 breadcrumb-item"><a href="http://localhost/BKPhone/Home">Trang chủ</a></li>
+        <li class="ml125 breadcrumb-item"><a href="http://localhost/SPhone/Home">Trang chủ</a></li>
         <li class="breadcrumb-item active" aria-current="page">Tin tức</li>
     </ol>
 </nav>

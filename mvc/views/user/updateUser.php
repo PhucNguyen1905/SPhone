@@ -12,7 +12,7 @@ require_once('mvc/views/blocks/header_admin.php');
 				<h5 style="color: red;"></h5>
 			</div>
 			<div class="panel-body">
-				<form method="post" action="http://localhost/BKPhone/UserAdmin/PostEdit/">
+				<form method="post" action="http://localhost/SPhone/UserAdmin/PostEdit/">
 					<div class="form-group">
 						<label for="usr">Họ & Tên:</label>
 						<input required="true" type="text" class="form-control" id="usr" name="fullname" value="<?= $data["userItem"]["fullname"] ?>">

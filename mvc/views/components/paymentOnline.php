@@ -1,7 +1,7 @@
 <div style="margin-top:70px" class="container">
     <h3>Chi tiết đơn hàng</h3>
     <div class="table-responsive">
-        <form action="http://localhost/BKPhone/PaymentOnline" id="create_form" method="post">
+        <form action="http://localhost/SPhone/PaymentOnline" id="create_form" method="post">
             <input type="text" name="user_id" value="<?= $user["id"] ?>" hidden="true">
 
             <div class="form-group">

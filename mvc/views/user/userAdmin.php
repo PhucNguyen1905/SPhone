@@ -7,7 +7,7 @@ require_once('mvc/views/blocks/header_admin.php');
 <!-- ===========Main Content============ -->
 <div class="container-fluid px-4">
 	<h3 class="fs-4 mb-3">User Management</h3>
-	<a href="http://localhost/BKPhone/UserAdmin/ViewAdd" class="btn btn-outline-primary">Add New Account</a>
+	<a href="http://localhost/SPhone/UserAdmin/ViewAdd" class="btn btn-outline-primary">Add New Account</a>
 	<div class="row mt-3">
 
 		<div class="col">
@@ -37,8 +37,8 @@ require_once('mvc/views/blocks/header_admin.php');
 
 
 
-							<td><a href="<?php echo 'http://localhost/BKPhone/UserAdmin/ViewEdit/' . $user['id']; ?>" class="editLink">Edit</a></td>
-							<td><a class="delLink" href="<?php echo 'http://localhost/BKPhone/UserAdmin/deletedUser/' . $user['id']; ?>" style="color: #ff7782;">Delete</a></td>
+							<td><a href="<?php echo 'http://localhost/SPhone/UserAdmin/ViewEdit/' . $user['id']; ?>" class="editLink">Edit</a></td>
+							<td><a class="delLink" href="<?php echo 'http://localhost/SPhone/UserAdmin/deletedUser/' . $user['id']; ?>" style="color: #ff7782;">Delete</a></td>
 						</tr>
 					<?php } ?>
 

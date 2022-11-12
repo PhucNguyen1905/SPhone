@@ -1,6 +1,6 @@
 <nav id="nav-breadcrumb" aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="ml125 breadcrumb-item"><a href="http://localhost/BKPhone/Home">Trang chủ</a></li>
+        <li class="ml125 breadcrumb-item"><a href="http://localhost/SPhone/Home">Trang chủ</a></li>
         <li class="breadcrumb-item active" aria-current="page">Giới thiệu</li>
     </ol>
 </nav>
@@ -10,8 +10,8 @@
     <div>
         <p class="page-header">CHÚNG TÔI LÀ AI</p>
         <div class="textbox">
-            <p class="page-section">BKPhone - Nhà phân phối/Đại lý bán lẻ điện thoại số một miền Nam</p>
-            <p>BKPhone là nhà phân phối/đại lý bán lẻ uy tín. Tuy chỉ mới bắt đầu hoạt động kinh doanh trong 3 năm nhưng đã gặt hái được nhiều thành tựu đáng giá.</p>
+            <p class="page-section">SPhone - Nhà phân phối/Đại lý bán lẻ điện thoại số một miền Nam</p>
+            <p>SPhone là nhà phân phối/đại lý bán lẻ uy tín. Tuy chỉ mới bắt đầu hoạt động kinh doanh trong 3 năm nhưng đã gặt hái được nhiều thành tựu đáng giá.</p>
             <div class="intro">
                 <ul>
                     <li>Doanh thu bán lẻ đạt Top 1</li>
@@ -21,7 +21,7 @@
                 </ul>
             </div>
             <p class="page-section">Giá trị cốt lõi</p>
-            <p>BKPhone mong muốn mang đến nhanh nhất cho người tiêu dùng những sản phẩm chất lượng.</p>
+            <p>SPhone mong muốn mang đến nhanh nhất cho người tiêu dùng những sản phẩm chất lượng.</p>
         </div>
     </div>
     <div>

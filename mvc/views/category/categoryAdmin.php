@@ -8,7 +8,7 @@ require_once('mvc/views/blocks/header_admin.php');
 <div class="container-fluid px-4">
 	<h3 class="fs-4 mb-3">Category Management</h3>
 	<p class="d-none" id="deleteSuccess"><?= $data["deleteSuccess"] ?></p>
-	<a href="http://localhost/BKPhone/CategoryAdmin/Add" class="btn btn-outline-primary">Add New Brand</a>
+	<a href="http://localhost/SPhone/CategoryAdmin/Add" class="btn btn-outline-primary">Add New Brand</a>
 	<div class="row mt-3">
 		<div class="col">
 			<table id="brandList" class="table bg-white rounded shadow-sm  table-hover">
@@ -26,8 +26,8 @@ require_once('mvc/views/blocks/header_admin.php');
 						<tr>
 							<td><?php echo $i + 1; ?></td>
 							<td><?php echo  $data["category"][$i]['name']; ?></td>
-							<td><a href="<?php echo 'http://localhost/BKPhone/CategoryAdmin/ViewEdit/' . $data["category"][$i]["id"]; ?>" class="editLink">Edit</a></td>
-							<td><a href="<?php echo 'http://localhost/BKPhone/CategoryAdmin/Delete/' . $data["category"][$i]["id"]; ?>" class="delLink" style="color: #ff7782;">Delete</a></td>
+							<td><a href="<?php echo 'http://localhost/SPhone/CategoryAdmin/ViewEdit/' . $data["category"][$i]["id"]; ?>" class="editLink">Edit</a></td>
+							<td><a href="<?php echo 'http://localhost/SPhone/CategoryAdmin/Delete/' . $data["category"][$i]["id"]; ?>" class="delLink" style="color: #ff7782;">Delete</a></td>
 						</tr>
 					<?php } ?>
 				</tbody>

@@ -103,7 +103,7 @@ session_start();
                         $time = $_GET['vnp_PayDate'];
                         $date_time = substr($time, 0, 4) . '-' . substr($time, 4, 2) . '-' . substr($time, 6, 2) . ' ' . substr($time, 8, 2) . ' ' . substr($time, 10, 2) . ' ' . substr($time, 12, 2);
 
-                        $conn = mysqli_connect('localhost', 'root', '', 'bkphone');
+                        $conn = mysqli_connect('localhost', 'root', '', 'sphone');
                         mysqli_set_charset($conn, 'utf8');
 
                         $user_id = 36;
@@ -146,7 +146,7 @@ session_start();
 
                 </label>
                 <br>
-                <a href="http://localhost/BKPhone/Home">
+                <a href="http://localhost/SPhone/Home">
                     <button>Quay lại</button>
                 </a>
             </div>

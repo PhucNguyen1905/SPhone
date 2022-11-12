@@ -21,7 +21,7 @@ class UserAdmin extends Controller
     public function deletedUser($id)
     {
         $this->userModel->deletedUser($id);
-        header('Location: http://localhost/BKPhone/UserAdmin');
+        header('Location: http://localhost/SPhone/UserAdmin');
     }
 
     public function ViewEdit($id)
@@ -54,8 +54,8 @@ class UserAdmin extends Controller
             } else $role_id = 1;
             $result = $this->userModel->updateuser($id, $fullname, $email, $role_id, $phone_number, $address, $password, $avatar);
             if ($location == 1) {
-                header('Location: http://localhost/BKPhone/Home/ManageAccount');
-            } else header('Location: http://localhost/BKPhone/UserAdmin');
+                header('Location: http://localhost/SPhone/Home/ManageAccount');
+            } else header('Location: http://localhost/SPhone/UserAdmin');
         }
     }
 
@@ -82,6 +82,6 @@ class UserAdmin extends Controller
             $role_id = getPost('role_id');
             $result = $this->userModel->addUser($fullname, $email, $role_id, $phone_number, $address, $password);
         }
-        header('Location: http://localhost/BKPhone/UserAdmin');
+        header('Location: http://localhost/SPhone/UserAdmin');
     }
 }
