@@ -1,5 +1,12 @@
 <?php
 require_once "mvc/utility/utility.php";
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
 class OrderAdmin extends Controller
 {
 
@@ -32,6 +39,50 @@ class OrderAdmin extends Controller
     public function updateStatusOrder($id, $status)
     {
         $this->orderModel->updateStatus($id, $status);
+        if ($status == 1) {
+            $mail = new PHPMailer();
+            $mail->IsSMTP();
+            $mail->Mailer = "smtp";
+            $mail->SMTPDebug  = 1;
+            $mail->SMTPAuth   = TRUE;
+            $mail->SMTPSecure = "tls";
+            $mail->Port = 587;
+            $mail->Host = "smtp.gmail.com";
+            $mail->Username = "sphone.store.tmdt@gmail.com";
+            $mail->Password = "hramvidyedxobnmy";
+            $mail->IsHTML(true);
+            $mail->AddReplyTo("sphone.store.tmdt@gmail.com");
+
+            $orderItem = $this->orderModel->getOrderItem($id);
+            $email = $orderItem['email'];
+            $name = $orderItem['fullname'];
+            $address = $orderItem['address'];
+            $phone = $orderItem['phone'];
+            $customer = "<b>Tên: </b>" . $name . " <br> <b>Địa chỉ: </b>" . $address . "<br> <b>Số điện thoại: </b>" . $phone . " <br>";
+
+            $detailorder = $this->orderModel->getDetailOrder($id);
+            $listProduct = "";
+            $countDetail = count($detailorder);
+            for ($i = 0; $i < $countDetail; $i++) {
+                $listProduct = $listProduct . '
+                <b>' . $i + 1 . '. ' . '
+        ' . $detailorder[$i]['title'] . '</b>; Giá: ' . number_format($detailorder[$i]['price']) . ' đ, SL: ' . $detailorder[$i]['num'] . '. Tổng: ' . number_format($detailorder[$i]['total_money']) . ' đ<br>
+            ';
+            }
+
+            $mail->AddAddress($email);
+            $mail->Subject = "SPhone with love";
+            $content = "<b>Cảm ơn " . $name . ".</b> </br> <p> Chúng tôi đã nhận được yêu cầu đặt hàng của bạn và đang xử lý nhé. Bạn sẽ nhận được đơn hàng trong thời gian sớm nhất có thể!</p> <b>Đơn hàng được giao đến:</b>  <br>" . $customer . " <br><b>Danh sách sản phẩm:</b> <br>" . $listProduct;
+            $mail->MsgHTML($content);
+            // echo $content;
+            if (!$mail->Send()) {
+                // echo "Error while sending Email.";
+                // var_dump($mail);
+
+            } else {
+                // echo "Email sent successfully";
+            }
+        }
         header('Location: http://localhost/SPhone/OrderAdmin');
     }
 
