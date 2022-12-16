@@ -38,7 +38,7 @@ class OrderAdmin extends Controller
 
     public function updateStatusOrder($id, $status)
     {
-        // $this->orderModel->updateStatus($id, $status);
+        $this->orderModel->updateStatus($id, $status);
         if ($status == 1) {
             $mail = new PHPMailer();
             $mail->IsSMTP();
@@ -82,7 +82,7 @@ class OrderAdmin extends Controller
                 echo "Email sent successfully";
             }
         }
-        // header('Location: http://localhost/SPhone/OrderAdmin');
+        header('Location: http://localhost/SPhone/OrderAdmin');
     }
 
     public function addOrderSuccess()
