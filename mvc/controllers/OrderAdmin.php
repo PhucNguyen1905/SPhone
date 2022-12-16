@@ -76,10 +76,10 @@ class OrderAdmin extends Controller
             $mail->MsgHTML($content);
             // echo $content;
             if (!$mail->Send()) {
-                echo "Error while sending Email.";
-                var_dump($mail);
+                // echo "Error while sending Email.";
+                // var_dump($mail);
             } else {
-                echo "Email sent successfully";
+                // echo "Email sent successfully";
             }
         }
         header('Location: http://localhost/SPhone/OrderAdmin');
