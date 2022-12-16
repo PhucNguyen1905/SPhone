@@ -38,7 +38,7 @@ class OrderAdmin extends Controller
 
     public function updateStatusOrder($id, $status)
     {
-        $this->orderModel->updateStatus($id, $status);
+        // $this->orderModel->updateStatus($id, $status);
         if ($status == 1) {
             $mail = new PHPMailer();
             $mail->IsSMTP();
@@ -49,7 +49,7 @@ class OrderAdmin extends Controller
             $mail->Port = 587;
             $mail->Host = "smtp.gmail.com";
             $mail->Username = "sphone.store.tmdt@gmail.com";
-            $mail->Password = "hramvidyedxobnmy";
+            $mail->Password = "bgsdckeoimlpbnje";
             $mail->IsHTML(true);
             $mail->AddReplyTo("sphone.store.tmdt@gmail.com");
 
@@ -76,14 +76,13 @@ class OrderAdmin extends Controller
             $mail->MsgHTML($content);
             // echo $content;
             if (!$mail->Send()) {
-                // echo "Error while sending Email.";
-                // var_dump($mail);
-
+                echo "Error while sending Email.";
+                var_dump($mail);
             } else {
-                // echo "Email sent successfully";
+                echo "Email sent successfully";
             }
         }
-        header('Location: http://localhost/SPhone/OrderAdmin');
+        // header('Location: http://localhost/SPhone/OrderAdmin');
     }
 
     public function addOrderSuccess()

@@ -42,7 +42,13 @@ class PaymentOnline extends Controller
             $orderId = $orderModel->getOrderId($user_id);
 
             for ($i = 0; $i < count($orderDetails); $i++) {
-                $orderModel->insertOrderDetail($orderId[0]["id"], $orderDetails[$i]["id"], $orderDetails[$i]["price"], $num[$i], $num[$i] * $orderDetails[$i]["price"]);
+                $orderModel->insertOrderDetail(
+                    $orderId[0]["id"],
+                    $orderDetails[$i]["id"],
+                    $orderDetails[$i]["price"],
+                    $num[$i],
+                    $num[$i] * $orderDetails[$i]["price"]
+                );
             }
         }
         $vnp_TxnRef = $_POST['order_id']; //Mã đơn hàng. Trong thực tế Merchant cần insert đơn hàng vào DB và gửi mã này sang VNPAY
