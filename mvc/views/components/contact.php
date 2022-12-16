@@ -72,7 +72,7 @@
         <div class="col-md-3 text-center">
             <ul class="list-unstyled mb-0">
                 <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>Đại học Bách Khoa TPHCM</p>
+                    <p>SPhone</p>
                 </li>
 
                 <li><i class="fas fa-phone mt-4 fa-2x"></i>
@@ -87,6 +87,46 @@
         <!--Grid column-->
 
     </div>
+
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Chính sách bảo hành</h2>
+    <h4 class="h1-responsive font-weight-bold text-center my-4">Bảo hành cam kết trong vòng 12 tháng</h4>
+    <p class="w-responsive mx-auto mb-5">
+
+        - Chỉ áp dụng cho sản phẩm chính, KHÔNG áp dụng cho phụ kiện đi kèm sản phẩm chính. <br>
+
+        + Bảo hành trong vòng 15 ngày (tính từ ngày SPhone nhận máy ở trạng thái lỗi và đến ngày gọi khách hàng ra lấy lại máy đã bảo hành). <br>
+
+        + Sản phẩm không bảo hành lại lần 2 trong 30 ngày kể từ ngày máy được bảo hành xong. <br>
+
+        + Nếu SPhone vi phạm cam kết (bảo hành quá 15 ngày hoặc phải bảo hành lại sản phẩm lần nữa trong 30 ngày kể từ lần bảo hành trước), Khách hàng được áp dụng phương thức "Hư gì đổi nấy ngay và luôn" hoặc Hoàn tiền với mức phí giảm 50%. <br>
+
+        *Từ tháng thứ 13 trở đi không áp dụng bảo hành cam kết, chỉ áp dụng bảo hành hãng (nếu có).</p>
+
+    <h4 class="h1-responsive font-weight-bold text-center my-4">Hư gì đổi nấy ngay và luôn</h4>
+    <p class="w-responsive mx-auto mb-5">
+        Sản phẩm hư gì thì đổi đó (cùng model, cùng dung lượng, cùng màu sắc...) đối với sản phẩm chính và đổi tương đương đối với phụ kiện đi kèm, cụ thể:
+
+    <h5>1) Hư sản phẩm chính thì đổi sản phẩm chính mới</h5>
+
+    - Tháng đầu tiên kể từ ngày mua: miễn phí. <br>
+
+    - Tháng thứ 2 đến tháng thứ 12: phí 10% giá trị hóa đơn/tháng.<br>
+
+    (VD: tháng thứ 2 phí 10%, tháng thứ 3 phí 20%...).<br>
+
+
+    Lưu ý: Nếu không có sản phẩm chính đổi cho Khách hàng thì áp dụng chính sách Bảo hành có cam kết hoặc Hoàn tiền với mức phí giảm 50%.<br>
+    <br>
+
+    <h5>2) Hư phụ kiện đi kèm thì đổi phụ kiện có cùng công năng mà SPhone đang kinh doanh:
+    </h5>
+    Phụ kiện đi kèm được đổi miễn phí trong vòng 12 tháng kể từ ngày mua sản phẩm chính bằng hàng phụ kiện SPhone đang kinh doanh mới với chất lượng tương đương. <br>
+
+    Lưu ý: Nếu không có phụ kiện tương đương hoặc Khách hàng không thích thì áp dụng bảo hành hãng. <br> <br>
+
+    <h5>3) Lỗi phần mềm không áp dụng, mà chỉ khắc phục lỗi phần mềm.</h5>
+    </p>
+
 
 </section>
 <!--Section: Contact v.2-->

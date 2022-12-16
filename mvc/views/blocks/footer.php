@@ -65,7 +65,7 @@
                 <h5>Liên hệ</h5>
                 <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
                 <ul class="fa-ul foot-desc ml-4">
-                    <li class="mb-2"><span class="fa-li"><i class="far fa-map"></i></span>Đại học Bách Khoa TPHCM
+                    <li class="mb-2"><span class="fa-li"><i class="far fa-map"></i></span>SPhone
                     </li>
                     <li class="mb-2"><span class="fa-li"><i class="fas fa-phone-alt"></i></span>0123 456 789</li>
                     <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>ngtrongphuc1905@gmail.com
