@@ -23,7 +23,7 @@
             </a>
         </div>
         <div class="imgSliderFlex">
-            <img style="margin-bottom: 10px;" src="https://cdn2.cellphones.com.vn/690x300,webp,q10/https://dashboard.cellphones.com.vn/storage/YOGA%206.jpg" alt="Third slide" class="imgSlider">
+            <img style="margin-bottom: 10px;" src="https://cdn2.cellphones.com.vn/690x300,webp,q10/https://dashboard.cellphones.com.vn/storage/RightBanner_2_699.png" alt="Third slide" class="imgSlider">
             <img src="https://cdn2.cellphones.com.vn/690x300/https://dashboard.cellphones.com.vn/storage/zenbook%2014.png" alt="Third slide" class="imgSlider">
         </div>
     </div>
