@@ -4,13 +4,13 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="https://cdn2.cellphones.com.vn/690x300,webp,q100/https://dashboard.cellphones.com.vn/storage/sliding-12t-th12.jpg" alt="First slide">
+                    <img class="d-block w-100" src="https://raw.githubusercontent.com/PhucNguyen1905/SPhone/main/public/images/anh1.png" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://cdn2.cellphones.com.vn/690x300,webp,q100/https://dashboard.cellphones.com.vn/storage/hang-cu-sliding.png" alt="Second slide">
+                    <img class="d-block w-100" src="https://raw.githubusercontent.com/PhucNguyen1905/SPhone/main/public/images/anh2.png" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://cdn2.cellphones.com.vn/690x300/https://dashboard.cellphones.com.vn/storage/sliding-fold4-th11-v2.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="https://raw.githubusercontent.com/PhucNguyen1905/SPhone/main/public/images/anh3.jpg" alt="Third slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -23,14 +23,14 @@
             </a>
         </div>
         <div class="imgSliderFlex">
-            <img style="margin-bottom: 10px;" src="https://cdn2.cellphones.com.vn/690x300,webp,q10/https://dashboard.cellphones.com.vn/storage/RightBanner_2_699.png" alt="Third slide" class="imgSlider">
-            <img src="https://cdn2.cellphones.com.vn/690x300/https://dashboard.cellphones.com.vn/storage/zenbook%2014.png" alt="Third slide" class="imgSlider">
+            <img style="margin-bottom: 10px;" src="https://raw.githubusercontent.com/PhucNguyen1905/SPhone/main/public/images/anh4.png" alt="Third slide" class="imgSlider">
+            <img src="https://raw.githubusercontent.com/PhucNguyen1905/SPhone/main/public/images/anh5.png" alt="Third slide" class="imgSlider">
         </div>
     </div>
     <!-- End Slider -->
     <!-- Begin Under-Slider -->
     <div class="under-slider">
-        <img src="https://cdn.cellphones.com.vn/media/wysiwyg/mb-ip-13-1200-75-max.png" alt="under-slider">
+        <img src="https://raw.githubusercontent.com/PhucNguyen1905/SPhone/main/public/images/anh6.png" alt="under-slider">
     </div>
 </div>
 <!-- End Under-Slider -->
